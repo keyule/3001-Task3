@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  server:
+    restart: on-failure
+    build: ./server
+    ports:
+      - '3000:3000'
+  authserver:
+    restart: on-failure
+    build: ./authserver
+    ports:
+      - '4000:4000'
