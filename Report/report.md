@@ -31,7 +31,7 @@
 
 **Other Information**
 An Admin account already exists:
-``` json
+``` yml
   {
     username: "test",
     password: "$2b$10$ogIIWcYWXJ2h19EDa0tkh.YT9hqFEuh9Y0mOnh6gljNxpC.9ZnqKS",
@@ -55,7 +55,7 @@ const posts = [
 ### Demo
 
 **Visiting /posts without logging in or without a token**
-``` 
+``` yml
 GET http://localhost:3000/posts 
 ```
 ``` HTTP
@@ -71,7 +71,7 @@ Unauthorized
 ```
 
 **Visiting /admin without logging in or without a token**
-``` 
+``` yml
 GET http://localhost:3000/admin 
 ```
 ``` HTTP
@@ -87,7 +87,7 @@ Unauthorized
 ```
 
 **Registering**
-``` json
+``` yml
 POST http://localhost:4000/register 
 Content-Type: application/json
 {
@@ -103,7 +103,7 @@ Content-Length: 0
 ```
 
 **Logging in**
-``` json
+``` yml
 POST http://localhost:4000/login 
 Content-Type: application/json
 {
@@ -126,7 +126,7 @@ Connection: close
 ```
 
 **Visiting /posts after login**
-``` json
+``` yml
 GET http://localhost:3000/posts 
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwicm9sZSI6ImJhc2ljIiwiaWF0IjoxNjgxNjkzMTQ2LCJleHAiOjE2ODE2OTMyMDZ9.SWBwp79hrdEBVRuRlYG78-DhTeu98D7V2BC6Ooj_pfk
 ```
@@ -148,7 +148,7 @@ Connection: close
 ```
 
 **Visiting /admin after login**
-``` json
+``` yml
 GET http://localhost:3000/admin 
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwicm9sZSI6ImJhc2ljIiwiaWF0IjoxNjgxNjkzMTQ2LCJleHAiOjE2ODE2OTMyMDZ9.SWBwp79hrdEBVRuRlYG78-DhTeu98D7V2BC6Ooj_pfk
 ```
@@ -165,7 +165,7 @@ Forbidden
 ```
 
 **Visting /posts after logging in as admin (Returns ALL posts)**
-``` json
+``` yml
 GET http://localhost:3000/posts 
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MTY5MzQ2NiwiZXhwIjoxNjgxNjkzNTI2fQ.psxWvWym47ld3MLMdez3MAYgFlO8RON-H-QvqHopmhc
 ```
@@ -191,7 +191,7 @@ Connection: close
 ```
 
 **Visting /admin after logging in as admin**
-``` json
+``` yml
 GET http://localhost:3000/admin 
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MTY5MzQ2NiwiZXhwIjoxNjgxNjkzNTI2fQ.psxWvWym47ld3MLMdez3MAYgFlO8RON-H-QvqHopmhc
 ```
@@ -213,7 +213,7 @@ Admin Page
 ### Other Requests
 
 **Refreshing token**
-``` json
+``` yml
 POST http://localhost:4000/token 
 Content-Type: application/json
 {
@@ -235,7 +235,7 @@ Connection: close
 ```
 
 **Logging out (Deleting refresh token)**
-```json
+``` yml
 DELETE http://localhost:4000/logout 
 Content-Type: application/json
 {
