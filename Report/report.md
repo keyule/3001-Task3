@@ -29,7 +29,7 @@
 | /posts | GET | Returns all posts of logged in user |
 | /admin | GET | Admin Page for role: admin |
 
-**Other Information**
+**Other Information**  
 An Admin account already exists:
 ``` yml
   {
