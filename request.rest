@@ -1,8 +1,8 @@
 GET http://localhost:3000/posts 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MTY4MzA5OCwiZXhwIjoxNjgxNjgzMTU4fQ.nW4KSKq7BXzezH400yVfp7lwJFuw196MQJt_3J_n2qI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MTY5MzQ2NiwiZXhwIjoxNjgxNjkzNTI2fQ.psxWvWym47ld3MLMdez3MAYgFlO8RON-H-QvqHopmhc
 ###
 GET http://localhost:3000/admin 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MTY4MzA5OCwiZXhwIjoxNjgxNjgzMTU4fQ.nW4KSKq7BXzezH400yVfp7lwJFuw196MQJt_3J_n2qI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MTY5MzQ2NiwiZXhwIjoxNjgxNjkzNTI2fQ.psxWvWym47ld3MLMdez3MAYgFlO8RON-H-QvqHopmhc
 
 ###
 
@@ -55,3 +55,5 @@ Content-Type: application/json
 {
 "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjgxNTkyMDI0fQ.XvJZ1lcR3cXV5A4vXdZa9Q6riEmqCY2louocp7qZWzg"
 }
+
+
